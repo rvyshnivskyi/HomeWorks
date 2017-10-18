@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c5768f3-d7a7-4c52-ad4a-63b4298ca171" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/playtika/users/Person.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/playtika/users/PersonUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/text/text1.txt" afterPath="$PROJECT_DIR$/resources/text/text1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/playtika/application/Application.java" afterPath="$PROJECT_DIR$/src/com/playtika/application/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/playtika/file/reader/FileReader.java" afterPath="$PROJECT_DIR$/src/com/playtika/file/reader/FileReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/playtika/text/analyzer/Text.java" afterPath="$PROJECT_DIR$/src/com/playtika/text/analyzer/Text.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/playtika/text/analyzer/TextTest.java" afterPath="$PROJECT_DIR$/src/com/playtika/text/analyzer/TextTest.java" />
     </list>
     <ignored path="HomeWorks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,9 +69,9 @@
         <entry file="file://$PROJECT_DIR$/src/com/playtika/application/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
-                <marker date="1508335006755" expanded="true" signature="394:411" ph="{...}" />
+                <marker date="1508336481186" expanded="true" signature="393:410" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -90,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/playtika/text/analyzer/TextTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+              <caret line="144" column="20" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="20" />
               <folding>
                 <element signature="e#321#322#0" expanded="true" />
                 <element signature="e#374#375#0" expanded="true" />
@@ -104,8 +108,8 @@
       <file leaf-file-name="FileReader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/playtika/file/reader/FileReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+            <state relative-caret-position="352">
+              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -175,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/com/playtika/first/appliances/televisor/DisplayType.java" />
         <option value="$PROJECT_DIR$/src/com/playtika/application/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/com/playtika/text/analyzer/TextTest.java" />
+        <option value="$PROJECT_DIR$/src/com/playtika/file/reader/FileReader.java" />
       </list>
     </option>
   </component>
@@ -230,6 +235,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HomeWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playtika" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,28 +424,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playtika" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWorks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWorks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -438,7 +443,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hw3_fixes.patch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HW4.patch" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
   </component>
   <component name="RecentsManager">
@@ -989,7 +994,7 @@
       <workItem from="1508331795068" duration="70000" />
       <workItem from="1508333846098" duration="1240000" />
       <workItem from="1508335171708" duration="91000" />
-      <workItem from="1508335472982" duration="461000" />
+      <workItem from="1508335472982" duration="1016000" />
     </task>
     <task id="LOCAL-00001" summary="Second part of HW2 and fixes part 1 according to the comments">
       <created>1508334657617</created>
@@ -1012,7 +1017,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508335821869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixes of HW3">
+      <created>1508335955599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1508335955599</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1021,7 +1033,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3885000" />
+    <option name="totallyTimeSpent" value="4440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1088,7 +1100,8 @@
     <MESSAGE value="Second part of HW2 and fixes part 1 according to the comments" />
     <MESSAGE value="First part of HW3 (only with changes in Text and TextTest classes)" />
     <MESSAGE value="HW3 full version" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW3 full version" />
+    <MESSAGE value="Fixes of HW3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes of HW3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1133,7 +1146,7 @@
         <state relative-caret-position="66">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1508335006755" expanded="true" signature="394:411" ph="{...}" />
+            <marker date="1508336481186" expanded="true" signature="393:410" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1231,7 +1244,7 @@
         <state relative-caret-position="66">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1508335006755" expanded="true" signature="394:411" ph="{...}" />
+            <marker date="1508336481186" expanded="true" signature="393:410" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1329,7 +1342,7 @@
         <state relative-caret-position="88">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <marker date="1508335006755" expanded="true" signature="394:411" ph="{...}" />
+            <marker date="1508336481186" expanded="true" signature="393:410" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1414,7 +1427,7 @@
         <state relative-caret-position="88">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <marker date="1508335006755" expanded="true" signature="394:411" ph="{...}" />
+            <marker date="1508336481186" expanded="true" signature="393:410" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1532,9 +1545,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/playtika/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <marker date="1508335006755" expanded="true" signature="394:411" ph="{...}" />
+            <marker date="1508336481186" expanded="true" signature="393:410" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1553,7 +1566,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/playtika/text/analyzer/TextTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+          <caret line="144" column="20" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="20" />
           <folding>
             <element signature="e#321#322#0" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
@@ -1565,8 +1578,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/playtika/file/reader/FileReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        <state relative-caret-position="352">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
           <folding />
         </state>
       </provider>
