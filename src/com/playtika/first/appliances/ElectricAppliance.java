@@ -5,8 +5,8 @@ import java.awt.*;
 public abstract class ElectricAppliance {
     private final boolean availableBattery;
     private final int voltage;
-    private boolean wasRepaired = false;
-    public boolean isTurnedOn = false;
+    private boolean wasRepaired;
+    private boolean isTurnedOn;
     public Color color;
 
     public ElectricAppliance(int voltage) {
@@ -14,56 +14,60 @@ public abstract class ElectricAppliance {
     }
 
     public ElectricAppliance(boolean availableBattery, int voltage) {
+        this.wasRepaired = false;
+        this.isTurnedOn = false;
         this.availableBattery = availableBattery;
         this.voltage = voltage;
-    }
-
-    public ElectricAppliance(boolean availableBattery, int voltage, Color color) {
-        this.availableBattery = availableBattery;
-        this.voltage = voltage;
-        this.color = color;
     }
 
     public boolean isAvailableBattery() {
-        return availableBattery;
+        return this.availableBattery;
     }
 
     public int getVoltage() {
-        return voltage;
+        return this.voltage;
     }
 
     public boolean repair() {
         boolean isRepaired = false;
-//        need implement logic;
-        if (isRepaired) changeRepairedStatus();
+        if(isRepaired) {
+            this.markThatWasRepaired();
+        }
+
         return isRepaired;
     }
 
     public boolean turnOn() {
-        if (isTurnedOn) return true;
-        else {
+        if(this.isTurnedOn) {
+            return true;
+        } else {
             boolean wasTurnedOn = false;
-//            need implement logic
-            if (wasTurnedOn) this.isTurnedOn = true;
+            if(wasTurnedOn) {
+                this.isTurnedOn = true;
+            }
+
             return wasTurnedOn;
         }
     }
 
     public boolean turnOff() {
-        if (!isTurnedOn) return true;
-        else {
+        if(!this.isTurnedOn) {
+            return true;
+        } else {
             boolean wasTurnedOff = false;
-//            need implement logic
-            if (wasTurnedOff) this.isTurnedOn = false;
+            if(wasTurnedOff) {
+                this.isTurnedOn = false;
+            }
+
             return wasTurnedOff;
         }
     }
 
     public boolean isWasRepaired() {
-        return wasRepaired;
+        return this.wasRepaired;
     }
 
-    private void changeRepairedStatus() {
+    private void markThatWasRepaired() {
         this.wasRepaired = false;
     }
 }

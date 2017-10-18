@@ -14,7 +14,6 @@ public class DevicesInteraction {
         remoteController.turnApplianceOn(audioSystem);
         remoteController.turnApplianceOff(tv);
         remoteController.turnApplianceOff(audioSystem);
-
     }
 }
 
