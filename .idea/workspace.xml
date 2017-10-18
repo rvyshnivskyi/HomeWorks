@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c5768f3-d7a7-4c52-ad4a-63b4298ca171" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/playtika/file/reader/FileReader.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HomeWorks/com/playtika/application/Application.class" afterPath="$PROJECT_DIR$/out/production/HomeWorks/com/playtika/application/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HomeWorks/com/playtika/application/ApplicationTest.class" afterPath="$PROJECT_DIR$/out/production/HomeWorks/com/playtika/application/ApplicationTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest.xml" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/text/text1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/text/text2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/text.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textNew.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/JUnit.xml" afterPath="$PROJECT_DIR$/libraries/JUnit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/playtika/application/Application.java" afterPath="$PROJECT_DIR$/src/com/playtika/application/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/playtika/file/reader/FileReader.java" afterPath="$PROJECT_DIR$/src/com/playtika/file/reader/FileReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/playtika/text/analyzer/Text.java" afterPath="$PROJECT_DIR$/src/com/playtika/text/analyzer/Text.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/playtika/text/analyzer/TextTest.java" afterPath="$PROJECT_DIR$/src/com/playtika/text/analyzer/TextTest.java" />
     </list>
@@ -96,9 +94,14 @@
       <file leaf-file-name="TextTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/playtika/text/analyzer/TextTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="156" column="42" selection-start-line="156" selection-start-column="42" selection-end-line="156" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="225">
+              <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+              <folding>
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -430,7 +433,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/hamcrest-all-1.3.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hw_3_2.patch" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
   </component>
   <component name="RecentsManager">
@@ -981,7 +984,7 @@
       <workItem from="1508331795068" duration="70000" />
       <workItem from="1508333846098" duration="1240000" />
       <workItem from="1508335171708" duration="91000" />
-      <workItem from="1508335472982" duration="54000" />
+      <workItem from="1508335472982" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="Second part of HW2 and fixes part 1 according to the comments">
       <created>1508334657617</created>
@@ -990,7 +993,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508334657617</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First part of HW3 (only with changes in Text and TextTest classes)">
+      <created>1508335605374</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1508335605374</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -999,7 +1009,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3478000" />
+    <option name="totallyTimeSpent" value="3742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1064,7 +1074,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second part of HW2 and fixes part 1 according to the comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second part of HW2 and fixes part 1 according to the comments" />
+    <MESSAGE value="First part of HW3 (only with changes in Text and TextTest classes)" />
+    <option name="LAST_COMMIT_MESSAGE" value="First part of HW3 (only with changes in Text and TextTest classes)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1129,7 +1140,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1222,7 +1238,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1518,9 +1539,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/playtika/text/analyzer/TextTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="156" column="42" selection-start-line="156" selection-start-column="42" selection-end-line="156" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="225">
+          <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
