@@ -1,0 +1,22 @@
+## File-based project format:
+*.iml
+*.iws
+ *.ipr
+
+# User-specific stuff:
+ modules.xml
+.idea/
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+/target/
+/copyright/
+/src/main/resources/text/textNew.txt
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
