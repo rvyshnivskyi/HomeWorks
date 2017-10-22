@@ -20,3 +20,4 @@
 
 # JIRA plugin
 atlassian-ide-plugin.xml
+/.idea/workspace.xml
