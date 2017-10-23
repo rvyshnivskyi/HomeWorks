@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "TextTestGroups">
+    <test name = "Constructor">
+        <groups>
+            <run>
+                <include name = "constructor"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name = "com.playtika.text.analyzer.TextTestNGTest"/>
+        </classes>
+    </test>
+
+    <test name = "GetLength">
+        <groups>
+            <run>
+                <include name = "getLength"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name = "com.playtika.text.analyzer.TextTestNGTest"/>
+        </classes>
+    </test>
+
+    <test name = "GetTopUnigueWords">
+        <groups>
+            <run>
+                <include name = "getTopUnigueWords"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name = "com.playtika.text.analyzer.TextTestNGTest"/>
+        </classes>
+    </test>
+
+    <test name = "GetWordFrequencies">
+        <groups>
+            <run>
+                <include name = "getWordFrequencies"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name = "com.playtika.text.analyzer.TextTestNGTest"/>
+        </classes>
+    </test>
+</suite>

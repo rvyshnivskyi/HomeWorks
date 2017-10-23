@@ -1,5 +1,7 @@
 package com.playtika.text.analyzer;
 
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -14,7 +16,7 @@ public class TextTestNGTest {
     Text text;
     String textWithoutWords;
 
-    @BeforeTest
+    @BeforeSuite
     public void setUp() {
         textWithoutWords = "   \n \t ,.'//\n";
     }
@@ -26,7 +28,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getLength",
-            dependsOnMethods = "correctCountOfWordsTotalLength")
+            dependsOnMethods = "correctCountOfWordsTotalLength",
+            priority = 1)
     public void textWithoutWordsHasZeroWordsLength() {
         text = new Text(textWithoutWords);
         int wordsTotalLength = text.getLengthInChars();
@@ -34,7 +37,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getLength",
-            dependsOnMethods = "correctCountOfWordsTotalLength")
+            dependsOnMethods = "correctCountOfWordsTotalLength",
+            priority = 1)
     public void emptyTextHasZeroWordsLength() {
         text = new Text("");
         int wordsTotalLength = text.getLengthInChars();
@@ -42,23 +46,22 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getLength",
-            dependsOnMethods = "correctCountOfWordsTotalLength")
+            dependsOnMethods = "correctCountOfWordsTotalLength",
+            priority = 1)
     public void countOfWordsTotalLengthThatSplitByNonLetterSymbols() {
         text = new Text("   I,.\n want (WaNt) to Be a GOOd specialist. \n\t I  have 5 dollars");
         int wordsTotalLength = text.getLengthInChars();
         assertThat(wordsTotalLength, is(41));
     }
 
-    @Test(groups = "getLength",
-            priority = 1)
+    @Test(groups = "getLength")
     public void correctCountOfWordsTotalLength() {
         text = new Text("I have 5 dollars");
         int wordsTotalLength = text.getLengthInChars();
         assertThat(wordsTotalLength, is(13));
     }
 
-    @Test(groups = "getTopUnigueWords",
-            priority = 1)
+    @Test(groups = "getTopUnigueWords")
     public void getTopUniqueWordsDetermination() {
         text = new Text("What is your name? - Roma is my name.");
         List<String> topWords = text.getTopWords(2);
@@ -67,7 +70,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getTopUnigueWords",
-            dependsOnMethods = "getTopUniqueWordsDetermination")
+            dependsOnMethods = "getTopUniqueWordsDetermination",
+            priority = 1)
     public void getTopWordsWhenTextStartsFromNonLetterSymbol() {
         text = new Text(".name");
         List<String> topWords = text.getTopWords(2);
@@ -76,7 +80,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getTopUnigueWords",
-            dependsOnMethods = "getTopUniqueWordsDetermination")
+            dependsOnMethods = "getTopUniqueWordsDetermination",
+            priority = 1)
     public void getTopUniqueWordsWithLettersInDifferentRegisters() {
         text = new Text("My name is Roma. Is it my name");
         List<String> topWords = text.getTopWords(2);
@@ -85,7 +90,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getTopUnigueWords",
-            dependsOnMethods = "getTopUniqueWordsDetermination")
+            dependsOnMethods = "getTopUniqueWordsDetermination",
+            priority = 1)
     public void getLessUniqueWordsThenExpected() {
         text = new Text("is it. it is");
         List<String> topWords = text.getTopWords(3);
@@ -94,7 +100,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getTopUnigueWords",
-            dependsOnMethods = "getTopUniqueWordsDetermination")
+            dependsOnMethods = "getTopUniqueWordsDetermination",
+            priority = 1)
     public void emptyTextHasNoUniqueWords() {
         text = new Text("");
         List<String> topWords = text.getTopWords(3);
@@ -102,7 +109,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getTopUnigueWords",
-            dependsOnMethods = "getTopUniqueWordsDetermination")
+            dependsOnMethods = "getTopUniqueWordsDetermination",
+            priority = 1)
     public void textWithoutWordsHasNoUniqueWords() {
         text = new Text(textWithoutWords);
         List<String> topWords = text.getTopWords(3);
@@ -111,7 +119,8 @@ public class TextTestNGTest {
 
     @Test(groups = "getTopUnigueWords",
             expectedExceptions = IllegalArgumentException.class,
-            dependsOnMethods = "getTopUniqueWordsDetermination")
+            dependsOnMethods = "getTopUniqueWordsDetermination",
+            priority = 1)
     public void getTopWordsMethodWithZeroParameter() {
         text = new Text("My name is Roma. It is my name");
         text.getTopWords(0);
@@ -119,14 +128,14 @@ public class TextTestNGTest {
 
     @Test(groups = "getTopUnigueWords",
             expectedExceptions = IllegalArgumentException.class,
-            dependsOnMethods = "getTopUniqueWordsDetermination")
+            dependsOnMethods = "getTopUniqueWordsDetermination",
+            priority = 1)
     public void getTopWordsMethodWithNegativeParameterThrowsException() {
         text = new Text("My name is Roma. It is my name");
         text.getTopWords(-3);
     }
 
-    @Test(groups = "getWordFrequencies",
-            priority = 1)
+    @Test(groups = "getWordFrequencies")
     public void getWordFrequenciesSimpleFlow() {
         text = new Text("one, one, two");
         Map<String, Integer> wordFrequencies = text.getWordFrequencies();
@@ -137,7 +146,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getWordFrequencies",
-            dependsOnMethods = "getWordFrequenciesSimpleFlow")
+            dependsOnMethods = "getWordFrequenciesSimpleFlow",
+            priority = 1)
     public void getWordFrequenciesWithDifferentRegisterOfSymbolsInWords() {
         text = new Text("One, one, two");
         Map<String, Integer> wordFrequencies = text.getWordFrequencies();
@@ -148,7 +158,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getWordFrequencies",
-            dependsOnMethods = "getWordFrequenciesSimpleFlow")
+            dependsOnMethods = "getWordFrequenciesSimpleFlow",
+            priority = 1)
     public void getWordFrequenciesWhenTextStartsFromNonLetterSymbol() {
         text = new Text(",one, one, two");
         Map<String, Integer> wordFrequencies = text.getWordFrequencies();
@@ -159,7 +170,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getWordFrequencies",
-            dependsOnMethods = "getWordFrequenciesSimpleFlow")
+            dependsOnMethods = "getWordFrequenciesSimpleFlow",
+            priority = 1)
     public void getWordFrequenciesOfOneRootWords() {
         text = new Text("One, onedrive, two");
         Map<String, Integer> wordFrequencies = text.getWordFrequencies();
@@ -171,7 +183,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getWordFrequencies",
-            dependsOnMethods = "getWordFrequenciesSimpleFlow")
+            dependsOnMethods = "getWordFrequenciesSimpleFlow",
+            priority = 1)
     public void emptyTextHasEmptyWordFrequenciesMap() {
         text = new Text("");
         Map<String, Integer> wordFrequencies = text.getWordFrequencies();
@@ -179,7 +192,8 @@ public class TextTestNGTest {
     }
 
     @Test(groups = "getWordFrequencies",
-            dependsOnMethods = "getWordFrequenciesSimpleFlow")
+            dependsOnMethods = "getWordFrequenciesSimpleFlow",
+            priority = 1)
     public void textWithoutWordsHasEmptyWordFrequenciesMap() {
         text = new Text(textWithoutWords);
         Map<String, Integer> wordFrequencies = text.getWordFrequencies();
