@@ -1,8 +1,11 @@
 package com.playtika.first.appliances.televisor;
 
 import com.playtika.first.appliances.ElectricAppliance;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Televisor extends ElectricAppliance {
+    private static final Logger LOG = LoggerFactory.getLogger(Televisor.class);
     public final float screenSize;
     public final DisplayType displayType;
     public final boolean is3DAvailable;
@@ -45,6 +48,6 @@ public class Televisor extends ElectricAppliance {
             status = "wasn\'t";
         }
 
-        System.out.println("TV " + status + " turned " + mode);
+        LOG.info("TV {} turned {}", status, mode);
     }
 }

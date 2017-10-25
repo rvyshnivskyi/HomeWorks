@@ -1,6 +1,8 @@
 package com.playtika.file.reader;
 
 import com.playtika.text.analyzer.Text;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.nio.file.NotDirectoryException;
@@ -20,6 +22,7 @@ import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.summingInt;
 
 public class FileReader {
+	private static final Logger LOG = LoggerFactory.getLogger(FileReader.class);
 	private final File startDirectory;
 
 	public FileReader(String startDirectoryPath) throws FileNotFoundException, NotDirectoryException {
@@ -33,7 +36,9 @@ public class FileReader {
 	}
 
 	public static void main(String[] args) throws IOException {
-		FileReader.copyFile(Paths.get("src", "main", "resources", "text", "text.txt").toFile());
+		File file = Paths.get("src", "main", "resources", "text", "text.txt").toFile();
+		FileReader.copyFile(file);
+		LOG.debug("Copying of file [{}] was finished", file);
 		Map<String, Integer> wordFrequencies = new FileReader(Paths.get("src", "main", "resources", "text").toString()).getWordFrequenciesForFiles();
 		System.out.println(wordFrequencies);
 	}
@@ -50,8 +55,7 @@ public class FileReader {
 
 	public static void printFileInformation(File file) throws IOException {
 		BasicFileAttributes fileAttributes = readAttributes(file.toPath(), BasicFileAttributes.class);
-		System.out.printf(
-				"File path: %s | size: %d Bytes | creation date: %s%n",
+		LOG.info("File path: {} | size: {} Bytes | creation date: {}",
 				file.getAbsolutePath(),
 				file.length(),
 				new SimpleDateFormat("dd-MM-yyyy HH:mm").format(fileAttributes.creationTime().toMillis()));

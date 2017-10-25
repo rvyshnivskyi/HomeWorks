@@ -1,8 +1,6 @@
 package com.playtika.text.analyzer;
 
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -16,7 +14,7 @@ public class TextTestNGTest {
     Text text;
     String textWithoutWords;
 
-    @BeforeSuite
+    @BeforeMethod
     public void setUp() {
         textWithoutWords = "   \n \t ,.'//\n";
     }
